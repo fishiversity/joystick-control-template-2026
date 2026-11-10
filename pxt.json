@@ -1,0 +1,29 @@
+{
+    "name": "joystick control template",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "microphone": "*",
+        "joystickbit": "github:tinkertanker/pxt-joystickbit#v1.0.5",
+        "wuKong": "github:elecfreaks/pxt-wukong#v1.6.1",
+        "TinkerBott": "github:fishiversity/AcebottTinkerBott#2ab6774856564db645746f96dc5c4f7980afdec4",
+        "pxt-comment-block": "github:fishiversity/pxt-makecode-comment-block#268e4f0a489a685a019169dd3f50532226fa8a75"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "9.0.12",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
