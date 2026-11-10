@@ -41,7 +41,15 @@ function Blue () {
     basic.showArrow(ArrowNames.North)
 }
 function StartUp () {
-    basic.showIcon(IconNames.Yes)
+    comment.comment("Create your team icon")
+    basic.showLeds(`
+        # # # # .
+        # . . . .
+        # # # . .
+        # . . . .
+        # . . . .
+        `)
+    comment.comment("Set your radio group")
     radio.setGroup(0)
 }
 function Red () {
