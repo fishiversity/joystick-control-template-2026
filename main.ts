@@ -1,4 +1,13 @@
 /**
+ * **CODING RULES**
+ * 
+ * 1) Do not change the names of the functions
+ * 
+ * 2) Set your radio group!
+ * 
+ * 3) Motors MUST be oriented with wires on the bottom and axles in the rear.
+ */
+/**
  * Do not edit below this note!
  */
 radio.onReceivedNumber(function (receivedNumber) {
