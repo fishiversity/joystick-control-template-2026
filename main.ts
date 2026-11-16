@@ -13,11 +13,11 @@
 radio.onReceivedNumber(function (receivedNumber) {
     comment.comment("DO NOT EDIT!")
     if (receivedNumber == 1) {
-        Blue()
+        Green()
     } else if (receivedNumber == 2) {
         Red()
     } else if (receivedNumber == 3) {
-        Green()
+        Blue()
     } else if (receivedNumber == 4) {
         Yellow()
     }
@@ -35,10 +35,10 @@ radio.onReceivedValue(function (name, value) {
     }
 })
 function Green () {
-    basic.showArrow(ArrowNames.West)
+    basic.showArrow(ArrowNames.North)
 }
 function Blue () {
-    basic.showArrow(ArrowNames.North)
+    basic.showArrow(ArrowNames.West)
 }
 function StartUp () {
     comment.comment("Create your team icon")
