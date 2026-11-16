@@ -10,20 +10,26 @@
 /**
  * Do not edit below this note!
  */
+function Left () {
+    basic.showArrow(ArrowNames.West)
+}
 radio.onReceivedNumber(function (receivedNumber) {
     comment.comment("DO NOT EDIT!")
     if (receivedNumber == 1) {
-        Green()
+        Up()
     } else if (receivedNumber == 2) {
-        Red()
+        Down()
     } else if (receivedNumber == 3) {
-        Blue()
+        Left()
     } else if (receivedNumber == 4) {
-        Yellow()
+        Right()
     }
 })
-function Yellow () {
-    basic.showArrow(ArrowNames.East)
+function Down () {
+    basic.showArrow(ArrowNames.South)
+}
+function Up () {
+    basic.showArrow(ArrowNames.North)
 }
 radio.onReceivedValue(function (name, value) {
     comment.comment("DO NOT EDIT!")
@@ -34,11 +40,8 @@ radio.onReceivedValue(function (name, value) {
         yValue = value
     }
 })
-function Green () {
-    basic.showArrow(ArrowNames.North)
-}
-function Blue () {
-    basic.showArrow(ArrowNames.West)
+function Right () {
+    basic.showArrow(ArrowNames.East)
 }
 function StartUp () {
     comment.comment("Create your team icon")
@@ -51,9 +54,6 @@ function StartUp () {
         `)
     comment.comment("Set your radio group")
     radio.setGroup(0)
-}
-function Red () {
-    basic.showArrow(ArrowNames.South)
 }
 let yValue = 0
 let xValue = 0
